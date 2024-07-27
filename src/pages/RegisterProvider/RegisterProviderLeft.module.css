@@ -1,0 +1,20 @@
+.provider-left {
+  width: 50%;
+  height: 100%;
+}
+
+.image-container {
+  padding: 50px 175px 50px 150px;
+}
+
+.path {
+  color: #747876;
+  font-size: 0.9rem;
+}
+
+.image-container img {
+  width: 475px;
+  height: auto;
+  margin-top: 20px;
+  object-fit: contain;
+}

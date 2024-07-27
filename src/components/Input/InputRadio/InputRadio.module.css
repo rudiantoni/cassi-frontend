@@ -1,0 +1,46 @@
+.container {
+  margin-top: 10px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.input-group-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.radio-container span {
+  margin-left: 5px;
+  font-size: 15px;
+  font-family: var(--default-ffamily);
+}
+
+.radio-container input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #005d9b;
+  border-radius: 50%;
+  outline: none;
+}
+
+.radio-container input:checked {
+  background: url('/src/assets/ok.svg') no-repeat;
+  background-size: 11px 11px;
+  background-position: center;
+}

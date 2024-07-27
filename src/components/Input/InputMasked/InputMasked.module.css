@@ -1,0 +1,23 @@
+.container {
+  display: inline-block;
+  width: 100%;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.container input {
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  font-family: var(--default-ffamily);
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  padding: 0px 15px;
+  outline: none;
+  cursor: pointer;
+}

@@ -1,0 +1,191 @@
+@import url('variables.css');
+
+html {
+  font-size: var(--default-fsize);
+  font-family: var(--default-ffamily);
+}
+
+body {
+  height: 100vh;
+}
+
+p, span, div {
+  font-size: 1rem;
+}
+
+h1 {
+  font-size: 1.9rem;
+  font-weight: bolder;
+  color: var(--dark-blue);
+  letter-spacing: -1px;
+  margin: 20px 0px;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+h5 {
+  font-size: 1.4rem;
+}
+h6 {
+  font-size: 1.2rem;
+}
+
+a {
+  color: black;
+}
+
+input[type="number"], input[type="text"], select {
+  font-family: var(--default-ffamily);
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+}
+
+.link {
+  color: #005d9b;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  height: 40px;
+  padding: 0px 15px;
+  border: 1px solid var(--dark-blue);
+  background-color: var(--dark-blue);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover:not([disabled]) {
+  color: var(--dark-blue);
+  background-color: #fcfc1b;
+  border-color: #fcfc1b;
+}
+
+.btn-link {
+  cursor: pointer;
+  color: black;
+  border: none;
+  text-decoration: underline;
+  font-size: 15px;
+}
+
+.btn[disabled] {
+  color: white;
+  background-color: var(--dark-grey);
+  border-color: var(--dark-grey);
+  opacity: 0.5;
+  cursor: unset;
+}
+
+.textarea {
+  width: 100%;
+  resize: none;
+  font-family: var(--default-ffamily);
+  font-size: 15px;
+  outline: none;
+  height: 100%;
+  border: none;
+  padding: 15px;
+}
+
+.w-100 {
+  width: 100%
+}
+
+.h-100 {
+  height: 100%
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Quick style classes */
+.flex-extend-full { flex: 1 1 auto; }
+.flex-shrink-full { flex: 0 0 auto; }
+.no-bg { background-color: unset; }
+.f1 { flex: 1; }
+.bg-red { background-color: red; }
+
+
+/*
+  Library styles override
+*/
+/* Global style for MultiSelect from react-multi-select-component */
+.input-multiselect-container .rmsc.multi-select {
+  /* Main container */
+  width: 100%;
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+}
+.input-multiselect-container .rmsc.multi-select .dropdown-container .dropdown-heading {
+  /* Internal primary container */
+  height: 35px;
+  padding-left: 14px;
+  cursor: pointer;
+}
+.input-multiselect-container .rmsc.multi-select .dropdown-heading-value span,
+.input-multiselect-container .rmsc.multi-select .select-panel .options .select-item,
+.input-multiselect-container .rmsc.multi-select .select-panel .options .no-options,
+.input-multiselect-container .rmsc.multi-select .select-item span,
+.input-multiselect-container .rmsc.multi-select .no-options span {
+  /* Texts */
+  font-size: 15px;
+  font-family: var(--default-ffamily);
+}
+.input-multiselect-container .rmsc.multi-select .select-panel .options .select-item,
+.input-multiselect-container .rmsc.multi-select .select-panel .options .no-options {
+  /* Options containers */
+  padding: 0px 0px 0px 14px;
+  height: 35px;
+  line-height: 35px;
+}
+
+
+
+.div-a {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+}
+
+.div-b {
+  background-color: green;
+  width: 10%;
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.div-b-anim {
+  width: 100%;
+}

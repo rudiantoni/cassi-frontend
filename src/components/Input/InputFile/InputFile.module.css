@@ -1,0 +1,94 @@
+.input {
+  display: none;
+}
+
+.dragbox {
+  border: 1px solid var(--light-grey);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.dragging {
+  background-color: var(--light-grey);
+  border: 1px dashed var(--dark-grey);
+}
+
+.file-grid {
+  flex: 1 1 auto;
+}
+
+.file-grid-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.file-grid-not-empty {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 15px;
+  gap: 15px;
+  align-items: baseline;
+}
+
+.file-legend {
+  color: var(--dark-grey);
+  font-size: 12px;
+  padding: 10px;
+  text-align: right;
+}
+
+.wrapper {
+  width: 75px;
+  height: 75px;
+  border: 5px solid var(--dark-grey);
+  border-radius: 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 6px;
+  opacity: 0.5;
+}
+
+.item:hover {
+  opacity: 1;
+}
+
+.name, .size {
+  background-color: var(--dark-grey);
+  color: white;
+  padding: 4px;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 10px;
+  width: 100%;
+}
+
+.size {
+  text-align: center;
+}
+
+.btn-remove {
+  border: none;
+  font-size: 9px;
+  color: #005d9b;
+  cursor: pointer;
+}
+
+.btn-remove:hover {
+  text-decoration: underline;
+}

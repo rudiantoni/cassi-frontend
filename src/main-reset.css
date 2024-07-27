@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, a {
+  text-decoration: none;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+select {
+  width: 170px;
+}
+
+/* Reset MultiSelect from react-multi-select-component */
+.rmsc.multi-select {
+  /* Main container */
+  width: 170px;
+  border: 1px solid black;
+}
+.rmsc.multi-select .clear-selected-button,
+.rmsc.multi-select .dropdown-heading-dropdown-arrow {
+  /* Open/close and clear buttons  */
+  transform: scale(0.7);
+  position: relative;
+}
+.rmsc.multi-select .clear-selected-button svg,
+.rmsc.multi-select .dropdown-heading-dropdown-arrow {
+  /* Open/close and clear icons  */
+  stroke: black;
+}
+.rmsc.multi-select .clear-selected-button {
+  /* Clear button  */
+  margin-left: -20px;
+  left: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.rmsc.multi-select .dropdown-heading-dropdown-arrow {
+  /* Open/close icon  */
+  left: 7px;
+}
+.rmsc.multi-select .dropdown-heading .dropdown-heading-value span,
+.rmsc.multi-select .select-panel .options .select-item,
+.rmsc.multi-select .select-panel .options .no-options {
+  /* Options/placeholder text */
+  color: black;
+}
+.rmsc.multi-select .dropdown-container,
+.rmsc.multi-select .dropdown-container:focus-within {
+  /* Internal secondary container */
+  border: none;
+  box-shadow: none;
+}
+.rmsc.multi-select .dropdown-container .dropdown-heading {
+  /* Internal primary container */
+  height: 19px;
+  padding: 0px 4px;
+}
+.rmsc.multi-select .dropdown-heading-value span,
+.rmsc.multi-select .select-panel .options .select-item,
+.rmsc.multi-select .select-panel .options .no-options,
+.rmsc.multi-select .select-item span,
+.rmsc.multi-select .no-options span {
+  /* Texts */
+  font-size: 13px;
+}
+.rmsc.multi-select .select-panel .options .select-item,
+.rmsc.multi-select .select-panel .options .no-options {
+  /* Options containers */
+  padding: 2px 4px;
+}

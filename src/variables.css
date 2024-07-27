@@ -1,0 +1,13 @@
+:root {
+  --default-fsize: 16px;
+  --default-ffamily: Arial, Helvetica, sans-serif;
+  --top-bar-height: 80px;
+  --bottom-bar-height: 115px;
+  --stepper-height: 65px;
+
+  --light-grey: #d9d9d9;
+  --dark-blue: #002d4b;
+  --dark-yellow: #bdc827;
+  --dark-grey: #a5a5a5;
+  --darker-grey: #4d4d4d;
+}
